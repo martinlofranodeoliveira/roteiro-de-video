@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.png -text
+*.ttf -text
+*.csv -text whitespace=cr-at-eol
+# Preserve the upstream OFL license byte for byte, including its spacing.
+assets/BARLOW-LICENSE.txt whitespace=-blank-at-eol

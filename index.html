@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="description" content="Planeje cenas, confira a duração prevista e organize a gravação. Roteiro de Vídeo é um aplicativo local e aberto da LOFRANO TECNOLOGIA.">
+  <meta name="theme-color" content="#223c4a">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>Roteiro de Vídeo · planeje antes de gravar</title>
+</head>
+<body>
+<!-- THESIS: Uma sequência e uma ordem de gravação compartilham as mesmas cenas; não é um editor de vídeo.
+OWN-WORLD: Bancada cinza, tinta azul, papel branco e âmbar de pendência; Barlow, divisórias contínuas e controles de régua.
+STORY: Escolher uma cena, ajustar imagem/ação, áudio e duração; conferir os tempos; levar o plano à gravação.
+FIRST VIEWPORT: Cabeçalho compacto, título editável, régua numerada de ponta a ponta, sequência larga à esquerda e edição de 340px à direita. Adicionar cena fica junto às visões. A régua recalcula os tempos sem simular reprodução.
+FORM: Régua de montagem, candidata 6; seed 6a2ccbd6; code-led. Direção assumida após opções sem resposta, sujeita à preferência do usuário. Movimento: marca de seleção revelada por clip-path; conteúdo sempre visível.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md -->
+  <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-open" viewBox="0 0 24 24"><path d="M3 7h7l2 3h9l-3 10H3V7Zm0 3V4h7l2 3h7v3"/></symbol>
+    <symbol id="i-save" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="1"/><path d="M16 8V3H3v13h5"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="m6 14 6-6 6 6"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 10 6 6 6-6"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="1"/><circle cx="8" cy="9" r="1.5"/><path d="m4 19 5-5 3 3 4-6 5 6"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 6h16M9 6V3h6v3M6 6l1 15h10l1-15M10 10v7m4-7v7"/></symbol>
+    <symbol id="i-undo" viewBox="0 0 24 24"><path d="m8 4-5 5 5 5M3 9h10a7 7 0 0 1 0 14"/></symbol>
+    <symbol id="i-print" viewBox="0 0 24 24"><path d="M6 8V3h12v5M6 17H3V8h18v9h-3M6 14h12v8H6zM17 11h1"/></symbol>
+  </defs></svg>
+  <a class="skip-link" href="#workspace">Ir para as cenas</a>
+  <header class="app-header">
+    <div class="brand"><svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true"><path d="M3 4h28v26H3zM10 4v26M24 4v26M3 11h7m14 0h7M3 23h7m14 0h7"/></svg><h1>Roteiro de Vídeo</h1></div>
+    <nav class="file-actions" aria-label="Arquivo do roteiro">
+      <button id="new-project" type="button">Novo</button>
+      <button id="open-project" type="button"><svg aria-hidden="true"><use href="#i-open"/></svg>Abrir JSON</button>
+      <button id="save-project" class="primary" type="button"><svg aria-hidden="true"><use href="#i-save"/></svg>Baixar JSON</button>
+    </nav>
+  </header>
+  <main class="app-main">
+    <section class="project-heading" aria-label="Dados do roteiro">
+      <div class="project-name"><label class="sr-only" for="project-title">Título do roteiro</label><input id="project-title" maxlength="120" value="Meu roteiro" autocomplete="off"><span id="source-label" class="source-label">Rascunho local</span></div>
+      <details id="project-details" class="project-details"><summary>Dados do roteiro</summary><div class="project-fields">
+        <label>Objetivo<textarea id="project-objective" rows="2" maxlength="2000"></textarea></label>
+        <div class="field-pair"><label>Formato planejado<select id="project-aspect"><option>16:9</option><option>9:16</option><option>1:1</option></select></label><label>Meta de duração<input id="project-target" inputmode="decimal" placeholder="Ex.: 00:40" autocomplete="off" aria-describedby="project-error"></label></div>
+        <label>Notas do projeto<textarea id="project-notes" rows="2" maxlength="2000"></textarea></label>
+      </div></details>
+    </section>
+    <p id="project-error" class="field-error" hidden></p>
+    <section class="sequence-overview" aria-label="Tempos previstos">
+      <div class="time-summary"><p id="time-summary">Adicione cenas para planejar a duração.</p><p id="target-summary">Sem meta de duração</p></div>
+      <div id="time-ruler" class="time-ruler" aria-label="Escolher cena pela sequência"></div>
+      <p id="pending-summary" class="pending-summary"></p>
+    </section>
+    <div class="workspace-toolbar">
+      <div role="tablist" aria-label="Organização do roteiro" class="view-tabs"><button id="view-narrative" role="tab" aria-selected="true" aria-controls="scene-list" type="button">Sequência</button><button id="view-recording" role="tab" aria-selected="false" aria-controls="scene-list" tabindex="-1" type="button">Gravação</button></div>
+      <div class="workspace-actions"><button id="add-scene" class="primary" type="button"><svg aria-hidden="true"><use href="#i-plus"/></svg>Adicionar cena</button><details class="export-menu" id="export-menu"><summary>Exportar plano</summary><div><button id="export-markdown" type="button">Markdown</button><button id="export-csv" type="button">CSV</button><button id="print-plan" type="button"><svg aria-hidden="true"><use href="#i-print"/></svg>Imprimir</button></div></details></div>
+    </div>
+    <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+    <div id="workspace" class="workspace" tabindex="-1">
+      <section class="sequence-panel" aria-labelledby="sequence-title">
+        <div class="list-heading"><h2 id="sequence-title">A ordem da história</h2><p id="scene-count">0 cenas</p></div>
+        <p id="view-description" class="view-description">As cenas seguem a ordem em que aparecem no vídeo.</p>
+        <div id="scene-list" class="scene-list" role="tabpanel" aria-labelledby="view-narrative"></div>
+        <div id="empty-state" class="empty-state"><h3>Comece pelo primeiro plano.</h3><p>Descreva o que aparece, o que se ouve e quanto tempo a cena deve durar.</p><button id="add-first" class="primary" type="button">Adicionar primeira cena</button><button id="load-example-empty" type="button">Ver um exemplo fictício</button></div>
+        <div class="list-footer"><button id="undo-remove" type="button" hidden><svg aria-hidden="true"><use href="#i-undo"/></svg>Desfazer remoção</button><p>Numeração narrativa preservada nas duas visões.</p></div>
+      </section>
+      <aside id="editor" class="editor" aria-labelledby="editor-title">
+        <header class="editor-heading"><h2 id="editor-title">Escolha uma cena</h2><div class="scene-position-actions"><button id="move-up" class="icon-button" type="button" aria-label="Mover cena para cima"><svg aria-hidden="true"><use href="#i-up"/></svg></button><button id="move-down" class="icon-button" type="button" aria-label="Mover cena para baixo"><svg aria-hidden="true"><use href="#i-down"/></svg></button></div></header>
+        <fieldset id="scene-fields" disabled>
+          <div class="reference-frame"><img id="reference-preview" alt="" hidden><div id="reference-placeholder"><svg aria-hidden="true"><use href="#i-image"/></svg><span>Referência opcional</span></div></div>
+          <div class="reference-actions"><button id="choose-reference" type="button">Adicionar imagem</button><button id="remove-reference" type="button" hidden>Retirar</button></div>
+          <label>Título da cena<input id="scene-title" maxlength="120" autocomplete="off"></label>
+          <div class="field-pair"><label>Duração no vídeo<input id="scene-duration" inputmode="decimal" placeholder="Ex.: 8 ou 00:08" autocomplete="off" aria-describedby="duration-help scene-error"></label><label>Enquadramento<select id="scene-framing"><option value="livre">Livre</option><option value="aberto">Aberto</option><option value="medio">Médio</option><option value="close">Close</option><option value="detalhe">Detalhe</option></select></label></div>
+          <p id="duration-help" class="field-help">Segundos ou mm:ss. Deixe vazio para definir depois.</p><p id="scene-error" class="field-error" hidden></p>
+          <label>Imagem / ação<textarea id="scene-visual" rows="3" maxlength="2000"></textarea></label>
+          <label>Fala / áudio<textarea id="scene-audio" rows="3" maxlength="2000"></textarea></label>
+          <div class="field-pair"><label>Local<input id="scene-location" maxlength="120" autocomplete="off" list="locations"></label><label>Preparação<input id="scene-setup" maxlength="120" autocomplete="off" list="setups"></label></div>
+          <details class="scene-notes"><summary>Observações da cena</summary><label><span class="sr-only">Observações da cena</span><textarea id="scene-notes" rows="3" maxlength="2000"></textarea></label></details>
+          <div class="scene-actions"><button id="duplicate-scene" type="button"><svg aria-hidden="true"><use href="#i-copy"/></svg>Duplicar</button><button id="remove-scene" class="danger" type="button"><svg aria-hidden="true"><use href="#i-trash"/></svg>Remover</button></div>
+        </fieldset>
+        <p id="editor-empty" class="editor-empty">Selecione uma cena ou adicione a primeira.</p>
+      </aside>
+    </div>
+    <footer class="app-footer"><p>Sem salvamento automático. O JSON leva o roteiro e suas imagens.</p><div><button id="load-example" class="text-button" type="button">Carregar exemplo</button><a href="https://github.com/martinlofranodeoliveira/roteiro-de-video" target="_blank" rel="noopener noreferrer">Código aberto</a><a href="https://lofranotecnologia.com.br" target="_blank" rel="noopener noreferrer">LOFRANO TECNOLOGIA</a></div></footer>
+  </main>
+  <div id="print-root"></div>
+  <dialog id="replace-dialog" aria-labelledby="replace-title" aria-describedby="replace-description"><h2 id="replace-title">Substituir o roteiro aberto?</h2><p id="replace-description">Baixe o JSON se quiser continuar nele depois. O arquivo de origem permanece intacto.</p><div class="dialog-actions"><button id="cancel-replace" type="button" autofocus>Continuar editando</button><button id="confirm-replace" class="primary" type="button">Substituir roteiro</button></div></dialog>
+  <input id="project-file" class="file-input" type="file" accept="application/json,.json">
+  <input id="reference-file" class="file-input" type="file" accept="image/png,image/jpeg,.png,.jpg,.jpeg">
+  <datalist id="locations"></datalist><datalist id="setups"></datalist>
+  <noscript>Ative JavaScript para editar o roteiro. O processamento acontece no seu navegador.</noscript>
+  <script type="module" src="src/app.mjs"></script>
+</body>
+</html>
