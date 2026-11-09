@@ -37,4 +37,12 @@ Foram feitas duas rodadas próprias de inspeção em 1280×720, 1010×900 e 390�
 
 O detector foi executado uma vez, com parsers indisponíveis e fallback regex: não calculou contraste nem seleção CSS. A única ocorrência apontou o img de referência inicialmente sem src e hidden. A aplicação só o exibe com um PNG incorporado validado; retira o src e volta a ocultá-lo quando a cena não tem referência. Isso não constitui uma auditoria integral de acessibilidade.
 
-Revisão final independente e DESIGN.md permanecem obrigatórios. A publicação não deve ser anunciada como concluída antes dessas etapas e da verificação do fluxo público.
+## Revisão final
+
+A revisão independente aceitou o contrato visual e apontou uma correção material: o contraste dos placeholders e da referência vazia. Os dois seletores passaram a usar `--muted` (`#526772`). Os estilos computados confirmaram essa cor sobre branco e sobre o fundo `#e7edf0`; as razões calculadas são 5,929:1 e 5,017:1. A captura do editor vazio foi conferida e o mesmo revisor classificou o único item como resolvido, com disposição de entrega nesse escopo. Isso não constitui uma nova auditoria integral.
+
+Após a recuperação da sessão do navegador, foi obtida uma captura real do editor móvel com a cena selecionada. A recaptura chamada `desktop.jpg` teve recorte lateral inesperado e não foi usada para comprovar a tela desktop completa; a inspeção anterior e a conferência pública continuam sendo evidências distintas. Não houve outra rodada de mudanças cosméticas.
+
+Os fluxos reais de importação e download preservaram todos os campos não editados, inclusive CR/LF, e as imagens incorporadas. Importações com PNG indecodificável e versão desconhecida preservaram os bytes do projeto anterior. O ciclo de duplicar, mover, remover e desfazer foi exercitado, e JSON, Markdown e CSV foram comparados aos resultados esperados. A orientação EXIF foi conferida com uma imagem sintética. O diálogo nativo de impressão não pôde ser inspecionado na sessão automatizada; não se alega PDF gerado nem paginação visualmente validada.
+
+DESIGN.md e o sidecar descrevem a implementação final; a confirmação do site público é registrada separadamente na entrega.

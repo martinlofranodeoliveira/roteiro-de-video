@@ -1,0 +1,410 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-09T00:02:49.061443Z",
+  "title": "Design System: Roteiro de Vídeo",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Bancada cinza",
+        "tonalRamp": [
+          "oklch(15.00% 0.00429 197.08)",
+          "oklch(26.43% 0.00429 197.08)",
+          "oklch(37.86% 0.00429 197.08)",
+          "oklch(49.29% 0.00429 197.08)",
+          "oklch(60.71% 0.00429 197.08)",
+          "oklch(72.14% 0.00429 197.08)",
+          "oklch(83.57% 0.00429 197.08)",
+          "oklch(95.00% 0.00429 197.08)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Papel branco",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 0.00)",
+          "oklch(26.43% 0.00000 0.00)",
+          "oklch(37.86% 0.00000 0.00)",
+          "oklch(49.29% 0.00000 0.00)",
+          "oklch(60.71% 0.00000 0.00)",
+          "oklch(72.14% 0.00000 0.00)",
+          "oklch(83.57% 0.00000 0.00)",
+          "oklch(95.00% 0.00000 0.00)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Tinta petróleo",
+        "tonalRamp": [
+          "oklch(15.00% 0.04032 233.22)",
+          "oklch(26.43% 0.04032 233.22)",
+          "oklch(37.86% 0.04032 233.22)",
+          "oklch(49.29% 0.04032 233.22)",
+          "oklch(60.71% 0.04032 233.22)",
+          "oklch(72.14% 0.04032 233.22)",
+          "oklch(83.57% 0.04032 233.22)",
+          "oklch(95.00% 0.04032 233.22)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Tinta auxiliar",
+        "tonalRamp": [
+          "oklch(15.00% 0.03070 230.95)",
+          "oklch(26.43% 0.03070 230.95)",
+          "oklch(37.86% 0.03070 230.95)",
+          "oklch(49.29% 0.03070 230.95)",
+          "oklch(60.71% 0.03070 230.95)",
+          "oklch(72.14% 0.03070 230.95)",
+          "oklch(83.57% 0.03070 230.95)",
+          "oklch(95.00% 0.03070 230.95)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Divisória fria",
+        "tonalRamp": [
+          "oklch(15.00% 0.01662 227.02)",
+          "oklch(26.43% 0.01662 227.02)",
+          "oklch(37.86% 0.01662 227.02)",
+          "oklch(49.29% 0.01662 227.02)",
+          "oklch(60.71% 0.01662 227.02)",
+          "oklch(72.14% 0.01662 227.02)",
+          "oklch(83.57% 0.01662 227.02)",
+          "oklch(95.00% 0.01662 227.02)"
+        ]
+      },
+      "soft": {
+        "role": "neutral",
+        "displayName": "Papel auxiliar",
+        "tonalRamp": [
+          "oklch(15.00% 0.00319 197.10)",
+          "oklch(26.43% 0.00319 197.10)",
+          "oklch(37.86% 0.00319 197.10)",
+          "oklch(49.29% 0.00319 197.10)",
+          "oklch(60.71% 0.00319 197.10)",
+          "oklch(72.14% 0.00319 197.10)",
+          "oklch(83.57% 0.00319 197.10)",
+          "oklch(95.00% 0.00319 197.10)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Azul de operação",
+        "tonalRamp": [
+          "oklch(15.00% 0.09517 228.54)",
+          "oklch(26.43% 0.09517 228.54)",
+          "oklch(37.86% 0.09517 228.54)",
+          "oklch(49.29% 0.09517 228.54)",
+          "oklch(60.71% 0.09517 228.54)",
+          "oklch(72.14% 0.09517 228.54)",
+          "oklch(83.57% 0.09517 228.54)",
+          "oklch(95.00% 0.09517 228.54)"
+        ]
+      },
+      "accent-hover": {
+        "role": "primary",
+        "displayName": "Azul de resposta",
+        "tonalRamp": [
+          "oklch(15.00% 0.08008 227.61)",
+          "oklch(26.43% 0.08008 227.61)",
+          "oklch(37.86% 0.08008 227.61)",
+          "oklch(49.29% 0.08008 227.61)",
+          "oklch(60.71% 0.08008 227.61)",
+          "oklch(72.14% 0.08008 227.61)",
+          "oklch(83.57% 0.08008 227.61)",
+          "oklch(95.00% 0.08008 227.61)"
+        ]
+      },
+      "selected": {
+        "role": "primary",
+        "displayName": "Azul lavado",
+        "tonalRamp": [
+          "oklch(15.00% 0.01239 215.82)",
+          "oklch(26.43% 0.01239 215.82)",
+          "oklch(37.86% 0.01239 215.82)",
+          "oklch(49.29% 0.01239 215.82)",
+          "oklch(60.71% 0.01239 215.82)",
+          "oklch(72.14% 0.01239 215.82)",
+          "oklch(83.57% 0.01239 215.82)",
+          "oklch(95.00% 0.01239 215.82)"
+        ]
+      },
+      "pending": {
+        "role": "secondary",
+        "displayName": "Âmbar de pendência",
+        "tonalRamp": [
+          "oklch(15.00% 0.11213 56.32)",
+          "oklch(26.43% 0.11213 56.32)",
+          "oklch(37.86% 0.11213 56.32)",
+          "oklch(49.29% 0.11213 56.32)",
+          "oklch(60.71% 0.11213 56.32)",
+          "oklch(72.14% 0.11213 56.32)",
+          "oklch(83.57% 0.11213 56.32)",
+          "oklch(95.00% 0.11213 56.32)"
+        ]
+      },
+      "pending-bg": {
+        "role": "secondary",
+        "displayName": "Papel âmbar",
+        "tonalRamp": [
+          "oklch(15.00% 0.03494 81.28)",
+          "oklch(26.43% 0.03494 81.28)",
+          "oklch(37.86% 0.03494 81.28)",
+          "oklch(49.29% 0.03494 81.28)",
+          "oklch(60.71% 0.03494 81.28)",
+          "oklch(72.14% 0.03494 81.28)",
+          "oklch(83.57% 0.03494 81.28)",
+          "oklch(95.00% 0.03494 81.28)"
+        ]
+      },
+      "error": {
+        "role": "tertiary",
+        "displayName": "Vermelho de correção",
+        "tonalRamp": [
+          "oklch(15.00% 0.15244 28.32)",
+          "oklch(26.43% 0.15244 28.32)",
+          "oklch(37.86% 0.15244 28.32)",
+          "oklch(49.29% 0.15244 28.32)",
+          "oklch(60.71% 0.15244 28.32)",
+          "oklch(72.14% 0.15244 28.32)",
+          "oklch(83.57% 0.15244 28.32)",
+          "oklch(95.00% 0.15244 28.32)"
+        ]
+      },
+      "focus": {
+        "role": "secondary",
+        "displayName": "Âmbar de foco",
+        "tonalRamp": [
+          "oklch(15.00% 0.14030 53.08)",
+          "oklch(26.43% 0.14030 53.08)",
+          "oklch(37.86% 0.14030 53.08)",
+          "oklch(49.29% 0.14030 53.08)",
+          "oklch(60.71% 0.14030 53.08)",
+          "oklch(72.14% 0.14030 53.08)",
+          "oklch(83.57% 0.14030 53.08)",
+          "oklch(95.00% 0.14030 53.08)"
+        ]
+      },
+      "measure": {
+        "role": "neutral",
+        "displayName": "Base da régua",
+        "tonalRamp": [
+          "oklch(15.00% 0.05138 231.69)",
+          "oklch(26.43% 0.05138 231.69)",
+          "oklch(37.86% 0.05138 231.69)",
+          "oklch(49.29% 0.05138 231.69)",
+          "oklch(60.71% 0.05138 231.69)",
+          "oklch(72.14% 0.05138 231.69)",
+          "oklch(83.57% 0.05138 231.69)",
+          "oklch(95.00% 0.05138 231.69)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Título do projeto",
+        "purpose": "Título editável, com reduções responsivas existentes."
+      },
+      "headline": {
+        "displayName": "Nome da aplicação",
+        "purpose": "Marca textual no cabeçalho."
+      },
+      "title": {
+        "displayName": "Título de seção",
+        "purpose": "Lista de cenas e nível equivalente do editor no celular."
+      },
+      "body": {
+        "displayName": "Texto base",
+        "purpose": "Base tipográfica herdada pelos controles e pelo conteúdo."
+      },
+      "label": {
+        "displayName": "Rótulo",
+        "purpose": "Identificação persistente dos campos."
+      },
+      "field": {
+        "displayName": "Valor de campo",
+        "purpose": "Texto editável em inputs, selects e textareas."
+      },
+      "button": {
+        "displayName": "Ação",
+        "purpose": "Rótulo seminegrito dos botões comuns."
+      }
+    },
+    "shadows": [
+      {
+        "name": "project-fields",
+        "value": "0 10px 36px #223c4a33",
+        "purpose": "Dados gerais suspensos acima da bancada."
+      },
+      {
+        "name": "export-menu",
+        "value": "0 8px 30px #223c4a30",
+        "purpose": "Menu de opções de exportação."
+      },
+      {
+        "name": "confirmation-dialog",
+        "value": "0 18px 60px #152d3c59",
+        "purpose": "Confirmação modal de substituição."
+      },
+      {
+        "name": "pending-current",
+        "value": "inset 0 0 0 2px var(--accent)",
+        "purpose": "Seleção de célula pendente; não representa elevação."
+      }
+    ],
+    "motion": [
+      {
+        "name": "measure-in",
+        "value": ".28s cubic-bezier(.16,1,.3,1)",
+        "purpose": "Revela o sublinhado da célula atual por clip-path; removido com prefers-reduced-motion."
+      },
+      {
+        "name": "mobile-editor-scroll",
+        "value": "smooth",
+        "purpose": "Seleção de cena no celular leva ao editor; usa instant com preferência por movimento reduzido."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-min",
+        "value": "1450px"
+      },
+      {
+        "name": "compact-max",
+        "value": "1050px"
+      },
+      {
+        "name": "mobile-max",
+        "value": "760px"
+      },
+      {
+        "name": "dialog-actions-max",
+        "value": "430px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botão primário",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ação principal de adicionar uma cena; a aplicação também usa esta variante para baixar JSON.",
+      "html": "<button class=\"ds-primary\" type=\"button\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/></svg>Adicionar cena</button>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:40px;padding:8px 13px;border:1px solid var(--line,#b8c5cb);border-radius:4px;color:var(--ink,#223c4a);background:var(--paper,#fff);font-family:Barlow,Arial,sans-serif;font-size:16px;font-weight:600;cursor:pointer;line-height:1.2}.ds-primary:hover{background:var(--selected,#e6f1f4);border-color:#8099a6}.ds-primary:focus-visible{outline:3px solid var(--focus,#b75d10);outline-offset:3px;}.ds-primary:disabled{opacity:.45;cursor:not-allowed}.ds-primary{color:var(--paper,#fff);background:var(--accent,#066b8c);border-color:var(--accent,#066b8c)}.ds-primary:hover{background:var(--accent-hover,#04556f);border-color:var(--accent,#066b8c)}.ds-primary svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}"
+    },
+    {
+      "name": "Botão secundário",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Ação de abrir o projeto, com papel branco e borda discreta.",
+      "html": "<button class=\"ds-secondary\" type=\"button\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M3 7h7l2 3h9l-3 10H3V7Zm0 3V4h7l2 3h7v3\"/></svg>Abrir JSON</button>",
+      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:40px;padding:8px 13px;border:1px solid var(--line,#b8c5cb);border-radius:4px;color:var(--ink,#223c4a);background:var(--paper,#fff);font-family:Barlow,Arial,sans-serif;font-size:16px;font-weight:600;cursor:pointer;line-height:1.2}.ds-secondary:hover{background:var(--selected,#e6f1f4);border-color:#8099a6}.ds-secondary:focus-visible{outline:3px solid var(--focus,#b75d10);outline-offset:3px;}.ds-secondary:disabled{opacity:.45;cursor:not-allowed}.ds-secondary svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}"
+    },
+    {
+      "name": "Botão de remoção",
+      "kind": "button",
+      "refersTo": "button-danger",
+      "description": "Variante compacta usada nas ações da cena, com aviso vermelho no hover.",
+      "html": "<button class=\"ds-danger\" type=\"button\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 6h16M9 6V3h6v3M6 6l1 15h10l1-15M10 10v7m4-7v7\"/></svg>Remover</button>",
+      "css": ".ds-danger{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:40px;padding:8px 13px;border:1px solid var(--line,#b8c5cb);border-radius:4px;color:var(--ink,#223c4a);background:var(--paper,#fff);font-family:Barlow,Arial,sans-serif;font-size:16px;font-weight:600;cursor:pointer;line-height:1.2}.ds-danger:hover{background:var(--selected,#e6f1f4);border-color:#8099a6}.ds-danger:focus-visible{outline:3px solid var(--focus,#b75d10);outline-offset:3px;}.ds-danger:disabled{opacity:.45;cursor:not-allowed}.ds-danger{color:var(--error,#a02d25);font-size:13px;min-height:35px;padding:7px 9px;margin-left:auto}.ds-danger:hover{background:#fff1ee;border-color:var(--error,#a02d25)}@media(max-width:760px){.ds-danger{font-size:14px;min-height:40px}}.ds-danger svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}"
+    },
+    {
+      "name": "Botão de texto",
+      "kind": "button",
+      "refersTo": "button-text",
+      "description": "Ação discreta do rodapé para carregar o exemplo fictício.",
+      "html": "<button class=\"ds-text\" type=\"button\">Carregar exemplo</button>",
+      "css": ".ds-text{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:40px;padding:8px 13px;border:1px solid var(--line,#b8c5cb);border-radius:4px;color:var(--ink,#223c4a);background:var(--paper,#fff);font-family:Barlow,Arial,sans-serif;font-size:16px;font-weight:600;cursor:pointer;line-height:1.2}.ds-text:hover{background:var(--selected,#e6f1f4);border-color:#8099a6}.ds-text:focus-visible{outline:3px solid var(--focus,#b75d10);outline-offset:3px;}.ds-text:disabled{opacity:.45;cursor:not-allowed}.ds-text{padding:0;border:0;min-height:30px;background:transparent;font-weight:400;text-decoration:underline;text-underline-offset:4px;font-size:12px}.ds-text:hover{background:var(--selected,#e6f1f4)}"
+    },
+    {
+      "name": "Botão de reordenação",
+      "kind": "button",
+      "refersTo": "button-icon",
+      "description": "Controle de ícone do editor; o rótulo acessível descreve a direção.",
+      "html": "<button class=\"ds-reorder\" type=\"button\" aria-label=\"Mover cena para cima\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"m6 14 6-6 6 6\"/></svg></button>",
+      "css": ".ds-reorder{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:40px;padding:8px 13px;border:1px solid var(--line,#b8c5cb);border-radius:4px;color:var(--ink,#223c4a);background:var(--paper,#fff);font-family:Barlow,Arial,sans-serif;font-size:16px;font-weight:600;cursor:pointer;line-height:1.2}.ds-reorder:hover{background:var(--selected,#e6f1f4);border-color:#8099a6}.ds-reorder:focus-visible{outline:3px solid var(--focus,#b75d10);outline-offset:3px;}.ds-reorder:disabled{opacity:.45;cursor:not-allowed}.ds-reorder{padding:8px;min-width:38px;min-height:36px;background:var(--soft,#f3f6f6);border-color:transparent}.ds-reorder:hover{background:var(--soft,#f3f6f6);border-color:transparent}.ds-reorder svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}"
+    },
+    {
+      "name": "Campo de duração",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Rótulo persistente e ajuda explicam como preencher ou deixar pendente.",
+      "html": "<label class=\"ds-field\">Duração no vídeo<input type=\"text\" inputmode=\"decimal\" placeholder=\"Ex.: 8 ou 00:08\" aria-describedby=\"ds-duration-help\"></label><p class=\"ds-field-help\" id=\"ds-duration-help\">Segundos ou mm:ss. Deixe vazio para definir depois.</p>",
+      "css": ".ds-field{display:block;font-family:Barlow,Arial,sans-serif;font-size:13px;font-weight:600;color:#3e5764;line-height:1.3}.ds-field input{display:block;width:100%;min-width:0;min-height:39px;padding:9px 10px;margin-top:5px;border:1px solid #a9bac2;border-radius:3px;background:var(--paper,#fff);color:var(--ink,#223c4a);font-family:Barlow,Arial,sans-serif;font-size:15px;font-weight:400;line-height:1.4;caret-color:var(--accent,#066b8c)}.ds-field input::placeholder{color:var(--muted,#526772);opacity:1}.ds-field input:focus-visible{outline:3px solid var(--focus,#b75d10);outline-offset:3px;}.ds-field input[aria-invalid=true]{border-color:var(--error,#a02d25);background:#fff8f5}.ds-field-help{font-family:Barlow,Arial,sans-serif;font-size:12px;line-height:1.4;margin:6px 0 0;color:var(--muted,#526772)}@media(max-width:760px){.ds-field{font-size:14px}.ds-field input{font-size:16px}.ds-field-help{font-size:13px}}"
+    },
+    {
+      "name": "Abas de organização",
+      "kind": "nav",
+      "refersTo": "view-tabs",
+      "description": "As mesmas cenas podem ser consultadas por sequência ou gravação. O exemplo representa o estado Sequência.",
+      "html": "<div class=\"ds-tabs\" role=\"tablist\" aria-label=\"Organização do roteiro\"><button type=\"button\" role=\"tab\" aria-selected=\"true\">Sequência</button><button type=\"button\" role=\"tab\" aria-selected=\"false\" tabindex=\"-1\">Gravação</button></div>",
+      "css": ".ds-tabs{display:flex;align-self:stretch;gap:4px}.ds-tabs button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 17px;border:1px solid transparent;border-radius:4px;background:transparent;color:var(--ink,#223c4a);font-family:Barlow,Arial,sans-serif;font-size:16px;font-weight:600;line-height:1.2;cursor:pointer}.ds-tabs button:hover{background:transparent}.ds-tabs button[aria-selected=true]{background:var(--ink,#223c4a);color:var(--paper,#fff);border-color:var(--ink,#223c4a)}.ds-tabs button:focus-visible{outline:3px solid var(--focus,#b75d10);outline-offset:3px;}@media(max-width:760px){.ds-tabs{width:100%}.ds-tabs button{flex:1;min-height:42px}}"
+    },
+    {
+      "name": "Painel do editor",
+      "kind": "card",
+      "refersTo": "editor",
+      "description": "Painel branco com cabeçalho separado e referência opcional; o exemplo reproduz o trecho inicial.",
+      "html": "<aside class=\"ds-editor\" aria-labelledby=\"ds-editor-title\"><header class=\"ds-editor-heading\"><h2 id=\"ds-editor-title\">Editar cena 01</h2></header><div class=\"ds-editor-fields\"><div class=\"ds-reference\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"1\"/><circle cx=\"8\" cy=\"9\" r=\"1.5\"/><path d=\"m4 19 5-5 3 3 4-6 5 6\"/></svg><span>Referência opcional</span></div><button class=\"ds-reference-action\" type=\"button\">Adicionar imagem</button><label class=\"ds-editor-label\">Título da cena<input value=\"O produto em detalhe\"></label></div></aside>",
+      "css": ".ds-editor{background:var(--paper,#fff);color:var(--ink,#223c4a);border:1px solid var(--line,#b8c5cb);border-radius:5px;overflow-y:auto;font-family:Barlow,Arial,sans-serif}.ds-editor-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--paper,#fff);padding:13px 17px;border-bottom:1px solid var(--line,#b8c5cb)}.ds-editor-heading h2{font-size:19px;font-weight:600;letter-spacing:-.02em;margin:0}.ds-editor-fields{padding:16px}.ds-reference{height:90px;background:#e7edf0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;font-size:13px;color:var(--muted,#526772);overflow:hidden}.ds-reference svg{width:29px;height:29px;fill:none;stroke:currentColor;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}.ds-reference-action{display:inline-flex;align-items:center;min-height:28px;padding:4px 0;margin-top:7px;border:1px solid transparent;border-radius:4px;background:transparent;color:var(--accent,#066b8c);font-family:Barlow,Arial,sans-serif;font-size:13px;font-weight:600;line-height:1.2;cursor:pointer}.ds-reference-action:hover{background:transparent}.ds-reference-action:focus-visible{outline:3px solid var(--focus,#b75d10);outline-offset:3px;}.ds-editor-label{display:block;margin-top:13px;font-size:13px;font-weight:600;color:#3e5764;line-height:1.3}.ds-editor-label input{display:block;width:100%;min-width:0;min-height:39px;padding:9px 10px;margin-top:5px;border:1px solid #a9bac2;border-radius:3px;background:var(--paper,#fff);color:var(--ink,#223c4a);font-family:Barlow,Arial,sans-serif;font-size:15px;font-weight:400;line-height:1.4;caret-color:var(--accent,#066b8c)}.ds-editor-label input:focus-visible{outline:3px solid var(--focus,#b75d10);outline-offset:3px;}@media(max-width:760px){.ds-editor-heading{padding:15px 18px}.ds-editor-heading h2{font-size:21px}.ds-editor-fields{padding:18px}.ds-reference{height:180px}.ds-reference-action{font-size:14px;min-height:38px}.ds-editor-label{font-size:14px}.ds-editor-label input{font-size:16px}}"
+    },
+    {
+      "name": "Linha de cena",
+      "kind": "custom",
+      "refersTo": "scene-row",
+      "description": "Uma entrada da lista com seleção explícita e tempos tabulares; usa o estado sem referência.",
+      "html": "<button class=\"ds-scene\" type=\"button\" aria-pressed=\"true\" aria-label=\"Cena 1: O produto em detalhe, 00:08\"><span class=\"ds-scene-number\">01</span><span class=\"ds-scene-thumb\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"1\"/><circle cx=\"8\" cy=\"9\" r=\"1.5\"/><path d=\"m4 19 5-5 3 3 4-6 5 6\"/></svg></span><span class=\"ds-scene-copy\"><strong>O produto em detalhe</strong><span class=\"ds-scene-snippet\">A mão apresenta o objeto sobre a bancada.</span><span class=\"ds-scene-place\">Bancada · Detalhe</span></span><span class=\"ds-scene-time\">00:08<small>De 00:00</small></span></button>",
+      "css": ".ds-scene{display:grid;grid-template-columns:34px 100px minmax(0,1fr) 66px;gap:12px;align-items:center;width:100%;min-height:90px;padding:10px 7px;border:0;border-bottom:1px solid var(--line,#b8c5cb);border-radius:0;background:transparent;color:var(--ink,#223c4a);text-align:left;font-family:Barlow,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.2;cursor:pointer}.ds-scene:hover{background:#f4f8f8;border-bottom-color:#8ca7b3}.ds-scene[aria-pressed=true]{background:var(--paper,#fff);outline:2px solid var(--accent,#066b8c);outline-offset:-2px}.ds-scene:focus-visible:not([aria-pressed=true]){outline:3px solid var(--focus,#b75d10);outline-offset:3px;}.ds-scene-number{font-size:22px;font-weight:600;font-variant-numeric:tabular-nums;color:#667d89;text-align:center}.ds-scene[aria-pressed=true] .ds-scene-number{color:var(--accent,#066b8c)}.ds-scene-thumb{width:100px;height:68px;display:flex;align-items:center;justify-content:center;background:#dce4e7;overflow:hidden}.ds-scene-thumb svg{width:22px;height:22px;color:#617e8c;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.ds-scene-copy{min-width:0;display:flex;flex-direction:column;gap:4px}.ds-scene-copy strong{font-size:17px;line-height:1.2;font-weight:600;overflow-wrap:anywhere}.ds-scene-snippet{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;overflow:hidden;font-size:14px;line-height:1.3;color:var(--muted,#526772);overflow-wrap:anywhere}.ds-scene-place{font-size:12px;line-height:1.2;color:#48616f;overflow-wrap:anywhere}.ds-scene-time{font-size:15px;font-weight:600;font-variant-numeric:tabular-nums;align-self:center;text-align:right}.ds-scene-time small{display:block;font-weight:400;font-size:12px;margin-top:5px;color:var(--muted,#526772)}@media(min-width:1450px){.ds-scene{grid-template-columns:38px 116px minmax(0,1fr) 75px;gap:16px;min-height:100px}.ds-scene-thumb{width:116px;height:76px}}@media(max-width:1050px){.ds-scene{grid-template-columns:29px 80px minmax(0,1fr) 60px;gap:9px}.ds-scene-thumb{width:80px;height:64px}.ds-scene-copy strong{font-size:16px}.ds-scene-snippet{font-size:13px}}@media(max-width:760px){.ds-scene{grid-template-columns:26px 70px minmax(0,1fr) 58px;gap:8px;min-height:88px;padding:10px 5px}.ds-scene-thumb{width:70px;height:64px}.ds-scene-number{font-size:20px}.ds-scene-time{font-size:14px}}"
+    },
+    {
+      "name": "Régua de montagem",
+      "kind": "custom",
+      "refersTo": "time-ruler",
+      "description": "Faixa contínua com célula atual, célula comum e duração pendente; as amostras não reproduzem vídeo.",
+      "html": "<div class=\"ds-ruler\" aria-label=\"Escolher cena pela sequência\"><button class=\"ds-ruler-cell\" type=\"button\" aria-current=\"true\" aria-label=\"Editar cena 1: Abertura\"><strong>01</strong><span>00:00 → 00:08</span><small>00:08 no vídeo</small></button><button class=\"ds-ruler-cell\" type=\"button\" aria-current=\"false\" aria-label=\"Editar cena 2: Detalhe\"><strong>02</strong><span>00:08 → 00:14</span><small>00:06 no vídeo</small></button><button class=\"ds-ruler-cell ds-ruler-pending\" type=\"button\" aria-current=\"false\" aria-label=\"Editar cena 3: Encerramento\"><strong>03</strong><span>00:14 → —</span><small>Duração pendente</small></button></div>",
+      "css": ".ds-ruler{display:flex;overflow-x:auto;min-height:52px;gap:2px;background:var(--measure,#2a4e60);padding:3px;border-radius:4px}.ds-ruler-cell{position:relative;flex:1 0 100px;display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;align-content:center;gap:2px 10px;min-height:46px;border:0;border-radius:1px;background:#edf2f3;color:var(--ink,#223c4a);padding:6px 11px;text-align:left;font-family:Barlow,Arial,sans-serif;font-size:16px;font-weight:600;line-height:1.2;cursor:pointer}.ds-ruler-cell:hover{background:var(--selected,#e6f1f4)}.ds-ruler-cell:focus-visible{outline:3px solid var(--focus,#b75d10);outline-offset:3px;}.ds-ruler-cell strong{font-size:22px;grid-row:1/3;align-self:center;font-weight:600;font-variant-numeric:tabular-nums}.ds-ruler-cell span{font-size:13px;white-space:nowrap;font-variant-numeric:tabular-nums}.ds-ruler-cell small{font-size:12px;color:var(--muted,#526772)}.ds-ruler-cell[aria-current=true]{background:var(--accent,#066b8c);color:var(--paper,#fff)}.ds-ruler-cell[aria-current=true] small{color:#dceef4}.ds-ruler-cell[aria-current=true]::after{content:\"\";position:absolute;bottom:0;left:8px;right:8px;height:2px;background:#e9bc76;animation:ds-measure-in .28s cubic-bezier(.16,1,.3,1)}.ds-ruler-cell.ds-ruler-pending{background:var(--pending-bg,#fff1d9);color:var(--pending,#8c4a0b)}.ds-ruler-cell.ds-ruler-pending small{color:var(--pending,#8c4a0b)}.ds-ruler-pending[aria-current=true]{box-shadow:inset 0 0 0 2px var(--accent,#066b8c)}@keyframes ds-measure-in{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0)}}@media(max-width:760px){.ds-ruler{scroll-snap-type:x proximity}.ds-ruler-cell{flex-basis:96px;scroll-snap-align:start}}@media(prefers-reduced-motion:reduce){.ds-ruler-cell::after{animation:none!important}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Régua de montagem",
+    "overview": "A Régua de montagem é a metáfora adotada pelo agente: bancada cinza, papel branco, tinta azul e uma sequência numerada que acompanha a edição. A direção é uma hipótese de execução após perguntas sem resposta para este projeto; não representa aprovação específica do usuário. Este documento registra a implementação existente em modo de extração, com base em styles.css, index.html e src/app.mjs.\n\nO ambiente é claro, compacto e operacional. Divisórias contínuas organizam as cenas; o editor branco mantém a cena escolhida próxima da lista em telas largas. Números estáveis e tempos tabulares orientam a consulta. A identidade institucional aparece no vínculo com a LOFRANO TECNOLOGIA, sem transformar o espaço de trabalho em uma capa promocional.",
+    "keyCharacteristics": [
+      "Régua numerada conectada à seleção da cena.",
+      "Superfícies planas e divisórias contínuas.",
+      "Azul para ação e seleção; âmbar para duração pendente.",
+      "Barlow local, pesos regular e seminegrito, tempos tabulares."
+    ],
+    "rules": [
+      {
+        "name": "The Estado explícito Rule",
+        "body": "Pendência combina cor com texto. A seleção mantém uma segunda pista visual: contorno na lista ou sublinhado na célula da régua.",
+        "section": "colors"
+      },
+      {
+        "name": "The Número estável Rule",
+        "body": "Preserve o número narrativo e os algarismos tabulares nas duas organizações da lista.",
+        "section": "typography"
+      },
+      {
+        "name": "The Bancada plana Rule",
+        "body": "Lista, régua e editor permanecem sem sombra externa em repouso; a sombra externa pertence aos conteúdos que se abrem acima da bancada.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preservar o número da história na régua e na lista, inclusive na visão de gravação.",
+      "Do mostrar “Pendente” ou “Início indef.” quando o tempo não puder ser calculado.",
+      "Do usar os tokens extraídos e o foco visível também nos botões de ícone.",
+      "Do manter rótulos explícitos, ações de mover por botão e indicação do exemplo fictício.",
+      "Do conservar a lista e o editor em sequência vertical no celular, com a régua rolável."
+    ],
+    "donts": [
+      "Don't converter a lista contínua em cartões flutuantes com sombras recorrentes.",
+      "Don't representar duração ausente como zero nem exibir um total completo após a primeira pendência.",
+      "Don't usar o âmbar de pendência como decoração de chamadas comuns.",
+      "Don't acrescentar animações de reprodução, cabeçote ou trilhas de mídia à régua de planejamento.",
+      "Don't atribuir a direção visual ou estas descrições a uma aprovação do usuário que não foi registrada."
+    ]
+  }
+}
